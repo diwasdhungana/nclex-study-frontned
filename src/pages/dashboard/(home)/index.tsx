@@ -30,7 +30,7 @@ export default function HomePage() {
     <Page title="Home" className={classes.root}>
       <Group justify="center" h="80%">
         <Stack justify="center" align="center">
-          <Title className={classes.title}>Welcome to Grace RN's </Title>
+          <Title className={classes.title}>Welcome to Nclex Study's </Title>
           <Title className={classes.title}> NCLEX practice app </Title>
           <Text>other pages will be available very soon.</Text>
           <Divider my="md" bg="red" w="100%" />

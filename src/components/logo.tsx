@@ -43,7 +43,7 @@ export function Logo({ size, style, ...props }: LogoProps) {
 export function LogoImage({ ...props }) {
   return (
     <Image
-      src="https://s3.ap-south-1.amazonaws.com/gracern/regular/a61d82a7-2eef-4217-b806-72b155b62028"
+      src="https://s3.ap-south-1.amazonaws.com/nclexstudy/regular/a61d82a7-2eef-4217-b806-72b155b62028"
       alt="Grance RN logo"
       height={64}
       style={{ cursor: 'pointer' }}

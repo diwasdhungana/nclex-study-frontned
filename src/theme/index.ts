@@ -17,18 +17,18 @@ export const theme = createTheme({
     '4xl': '160em',
   },
   colors: {
-    grace: [
-      '#ffd4b3', // lightest
-      '#ffc8a0',
-      '#ffbb8c',
-      '#ffad79',
-      '#ffa166',
-      '#ff914c', // 6th index (base shade)
-      '#e67e44',
-      '#cc6d3d',
-      '#b35d36',
-      '#994f30', // darkest
+    studycolor: [
+      '#e9d5ff', // lightest
+      '#d8b4fe',
+      '#c084fc',
+      '#a855f7',
+      '#9333ea',
+      '#7e22ce', // 6th index (base shade)
+      '#6b21a8',
+      '#581c87',
+      '#4c1d95',
+      '#3b0764', // darkest
     ],
   },
-  primaryColor: 'grace',
+  primaryColor: 'studycolor',
 });

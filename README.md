@@ -1,8 +1,8 @@
-# GraceRN Nursing Student Platform
+# nclexstudy Nursing Student Platform
 
 ## Overview
 
-GraceRN is a comprehensive web application designed for nursing students and administrators. It provides a robust platform for creating, managing, and attempting a variety of nursing test types, including advanced question formats and the unique Archer test mode. The application supports dynamic test creation, user management, and detailed performance tracking.
+nclexstudy is a comprehensive web application designed for nursing students and administrators. It provides a robust platform for creating, managing, and attempting a variety of nursing test types, including advanced question formats and the unique Archer test mode. The application supports dynamic test creation, user management, and detailed performance tracking.
 
 ---
 
