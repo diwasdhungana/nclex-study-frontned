@@ -1,0 +1,91 @@
+.root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-size: rem(50px);
+  font-weight: 900;
+  letter-spacing: rem(-2px);
+
+  @media (max-width: $mantine-breakpoint-md) {
+    font-size: rem(25px);
+  }
+}
+
+.editorInputQuill {
+  height: 100%;
+  width: 100%;
+}
+
+.editableContainer {
+  height: 15px;
+}
+
+.paginationControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.paginationButton {
+  background-color: var(--mantine-color-customOrange-6);
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.paginationButton:hover {
+  background-color: var(--mantine-color-customBlue-9);
+}
+
+.paginationButton:disabled {
+  background-color: #f9f9f9;
+  color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.htmlContentDisplay {
+  /* Target tables within the HTML content */
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 2px solid #ced4da;
+
+    td,
+    th {
+      border: 2px solid #ced4da;
+      padding: 6px 8px;
+      min-width: 1em;
+      position: relative;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f1f3f5;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    /* Ensure paragraphs inside cells don't add extra spacing */
+    p {
+      margin: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 4px;
+  }
+}

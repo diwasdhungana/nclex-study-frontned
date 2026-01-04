@@ -1,0 +1,179 @@
+/* Basic editor styles */
+.tiptap {
+  :first-child {
+    margin-top: 0;
+  }
+
+  /* Table-specific styling */
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    border: 2px solid #ced4da;  /* Added explicit border for table */
+
+    td,
+    th {
+      border: 2px solid #ced4da !important;  /* Made border more explicit with !important */
+      box-sizing: border-box;
+      min-width: 1em;
+      padding: 6px 8px;
+      position: relative;
+      vertical-align: top;
+
+      > * {
+        margin-bottom: 0;
+      }
+    }
+
+    th {
+      background-color: #f1f3f5;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .selectedCell:after {
+      background: rgba(200, 200, 255, 0.4);
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      pointer-events: none;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .column-resize-handle {
+      background-color: #adf;
+      bottom: -2px;
+      pointer-events: none;
+      position: absolute;
+      right: -2px;
+      top: 0;
+      width: 4px;
+    }
+  }
+
+  .tableWrapper {
+    margin: 1rem 0;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+  }
+
+  &.resize-cursor {
+    cursor: ew-resize;
+    cursor: col-resize;
+  }
+}
+
+
+.editor-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 4px;
+  
+  &.ProseMirror-selectednode {
+    outline: 2px solid #0096ff;
+  }
+}
+
+/* Additional specific styles for the editor content area */
+.mantine-RichTextEditor-content {
+  table {
+    border: 2px solid #ced4da;
+    margin: 0;
+    width: 100%;
+    
+    td, th {
+      border: 2px solid #ced4da !important;
+      padding: 6px 8px;
+    }
+    
+    th {
+      background-color: #f1f3f5;
+      font-weight: bold;
+    }
+  }
+}
+
+/* You can remove the .rich-text-table class styles as they're not being applied */
+
+
+/* Add these styles to your richTextStyle.scss */
+
+/* Generic table styles that will apply to all tables */
+.html-content-display,   /* For your direct HTML content display */
+.mantine-Paper-root,     /* For Mantine Paper component */
+.mantine-Card-root,      /* For Mantine Card component */
+.content-wrapper {       /* For any custom wrapper */
+  table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 2px solid #ced4da;
+    font-family: inherit;
+
+    /* Handle table overflow */
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+    @media (min-width: 768px) {
+      display: table;
+      white-space: normal;
+    }
+
+    td, th {
+      border: 2px solid #ced4da;
+      padding: 6px 8px;
+      min-width: 1em;
+      position: relative;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f1f3f5;
+      font-weight: bold;
+    }
+
+    /* Reset margins for elements inside cells */
+    p, div, span {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Specific styles for the tiptap-table class */
+    &.tiptap-table {
+      margin: 1rem 0;
+      
+      td, th {
+        min-width: 75px; /* Match the min-width from your HTML */
+      }
+    }
+  }
+
+  /* Handle nested tables */
+  table table {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Optional: Add print styles */
+@media print {
+  .html-content-display table,
+  .mantine-Paper-root table,
+  .mantine-Card-root table,
+  .content-wrapper table {
+    break-inside: avoid;
+    border: 1pt solid #000;
+
+    td, th {
+      border: 1pt solid #000;
+    }
+  }
+}

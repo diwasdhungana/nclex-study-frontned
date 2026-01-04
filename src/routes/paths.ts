@@ -1,0 +1,95 @@
+import { root } from 'postcss';
+
+export const paths = {
+  auth: {
+    root: '/auth',
+    login: '/auth/login',
+    register: '/auth/register',
+    forgotPassword: '/auth/forgot-password',
+    resetPassword: '/auth/reset-password',
+    otp: '/auth/otp',
+    terms: '/auth/terms',
+    privacy: '/auth/privacy',
+  },
+
+  dashboard: {
+    root: '/dashboard',
+    home: '/dashboard/home',
+    myProfile: {
+      root: '/dashboard/my-profile',
+    },
+    admin: {
+      root: '/dashboard/admin',
+      addQuestions: {
+        root: '/dashboard/admin/add-questions',
+      },
+      viewQuestions: {
+        root: '/dashboard/admin/view-questions/',
+        viewSpecificQuestions: '/dashboard/admin/view-questions/:questionId',
+      },
+      viewSubjectSystem: {
+        root: '/dashboard/admin/subjects-systems',
+      },
+      groupQuesitons: {
+        root: '/dashboard/admin/group-questions',
+      },
+      archer: {
+        root: '/dashboard/admin/archer',
+        addQuestion: '/dashboard/admin/archer/add-question',
+        viewQuestions: {
+          root: '/dashboard/admin/archer/view-questions',
+          viewSpecificQuestions: '/dashboard/admin/archer/view-questions/:questionId',
+        },
+        manageSets: {
+          root: '/dashboard/admin/archer/manage-sets',
+          specific: '/dashboard/admin/archer/manage-sets/:setId',
+        },
+      },
+      users: {
+        root: '/dashboard/admin/users',
+      },
+      video: {
+        root: '/dashboard/admin/video',
+        upload: '/dashboard/admin/video/upload',
+        edit: '/dashboard/admin/video/:id',
+      },
+    },
+    student: {
+      root: '/dashboard/student',
+      createTest: {
+        root: '/dashboard/student/create-test',
+      },
+      activeTest: {
+        root: '/dashboard/student/active-test',
+      },
+      attemptTest: {
+        root: '/dashboard/student/test',
+      },
+      viewResults: {
+        root: '/dashboard/student/view-results',
+        viewSpecificResults: '/dashboard/student/view-results/:resultId',
+      },
+      archer: {
+        root: '/dashboard/student/archer',
+        createTest: {
+          root: '/dashboard/student/archer/create-test',
+        },
+        activeTest: {
+          root: '/dashboard/student/archer/active-test',
+        },
+        attemptTest: {
+          root: '/dashboard/student/archer/test',
+        },
+        viewResults: {
+          root: '/dashboard/student/archer/view-results',
+          viewSpecificResults: '/dashboard/student/archer/view-results/:testId',
+        },
+      },
+      video: {
+        root: '/dashboard/student/video',
+        view: '/dashboard/student/video/:id',
+        player: '/dashboard/student/video/player/:id',
+      },
+    },
+  },
+};
