@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { app } from '@/config';
+import { app } from '../config';
 
 export const client = axios.create({
   baseURL: app.apiBaseUrl,

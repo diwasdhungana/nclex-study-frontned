@@ -2,7 +2,7 @@ import { Mutation, Query, QueryKey } from '@tanstack/react-query';
 import { AxiosError } from 'axios';
 import { removeClientAccessToken, setClientTokens } from './axios';
 import { client } from './axios';
-import { app } from '@/config';
+import { app } from '../config';
 
 let isRefreshing = false;
 const failedQueue: {

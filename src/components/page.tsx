@@ -2,7 +2,7 @@ import { forwardRef, ReactNode, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Box, BoxProps } from '@mantine/core';
 import { nprogress } from '@mantine/nprogress';
-import { app } from '@/config';
+import { app } from '../config';
 
 interface PageProps extends BoxProps {
   children: ReactNode;

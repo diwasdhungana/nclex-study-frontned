@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { LoadingScreen } from '@/components/loading-screen';
-import { app } from '@/config';
+import { app } from '../config';
 import { useAuth } from '@/hooks';
 import { paths } from '@/routes';
 
