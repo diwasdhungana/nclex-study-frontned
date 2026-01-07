@@ -20,7 +20,7 @@ const index = () => {
       <Group justify="center" h="80%">
         <Stack justify="center" align="center">
           <Title className={classes.title}> Admin Page </Title>
-          <Text>Manage Regular Tests, Archer Tests and Class Recordings.</Text>
+          <Text>Manage Regular Tests, Timed Tests and Class Recordings.</Text>
           <Divider my="md" bg="red" w="100%" />
           <Group>
             <Button
@@ -59,11 +59,11 @@ const index = () => {
             <Button
               size="xl"
               onClick={() => {
-                navigate(paths.dashboard.admin.archer.root);
+                navigate(paths.dashboard.admin.timed.root);
               }}
               bg="red"
             >
-              Archer
+              Timed Test
             </Button>
             <Button
               size="xl"

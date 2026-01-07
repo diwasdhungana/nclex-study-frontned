@@ -37,7 +37,7 @@ const index = () => {
       <Group justify="center" h="80%">
         <Stack justify="center" align="center">
           <Title className={classes.title}> Student Page </Title>
-          <Text>Explore different tests and class recordings.</Text>
+          <Text>Explore our Practice Test and Timed Test.</Text>
           <Divider my="md" bg="red" w="100%" />
           <Group>
             <Button
@@ -71,10 +71,10 @@ const index = () => {
                 bg="red"
                 size="xl"
                 onClick={() => {
-                  navigate(paths.dashboard.student.archer.root);
+                  navigate(paths.dashboard.student.timed.root);
                 }}
               >
-                Visit Archer
+                Visit Timed Test
               </Button>
             )}
             {user.classRecordingEligible && (

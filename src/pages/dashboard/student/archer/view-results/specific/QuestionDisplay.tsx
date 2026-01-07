@@ -86,7 +86,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
         <Group>
           <Button
             onClick={() => {
-              navigate(paths.dashboard.student.archer.viewResults.root);
+              navigate(paths.dashboard.student.timed.viewResults.root);
             }}
           >
             Back to Results
@@ -97,7 +97,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
             disabled={thisIndex == 0}
             onClick={() => {
               navigate(
-                paths.dashboard.student.archer.viewResults.root +
+                paths.dashboard.student.timed.viewResults.root +
                   '/' +
                   testId +
                   `?i=${prevIndex}&t=${totalQuestions}`
@@ -110,7 +110,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
             disabled={thisIndex === total - 1}
             onClick={() => {
               navigate(
-                paths.dashboard.student.archer.viewResults.root +
+                paths.dashboard.student.timed.viewResults.root +
                   '/' +
                   testId +
                   `?i=${nextIndex}&t=${totalQuestions}`

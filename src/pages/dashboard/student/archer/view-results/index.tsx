@@ -53,7 +53,7 @@ const Index = () => {
 
   const handleViewResults = (test: any) => {
     navigate(
-      paths.dashboard.student.archer.viewResults.root +
+      paths.dashboard.student.timed.viewResults.root +
         '/' +
         test._id +
         `?i=0&t=${test.questions.length}`
@@ -122,7 +122,7 @@ const Index = () => {
     <Page title="Archer Tests Results" className={css.root}>
       <Stack>
         <Group gap="xl">
-          <Button variant="subtle" onClick={() => navigate(paths.dashboard.student.archer.root)}>
+          <Button variant="subtle" onClick={() => navigate(paths.dashboard.student.timed.root)}>
             <PiArrowLeft size="xl" strokeWidth={10} /> {'  '}
             <Title order={3} mx="sm">
               Archer Page

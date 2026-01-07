@@ -56,7 +56,7 @@ const Index = () => {
     <Page title="New Test" className={css.root}>
       <Stack>
         <Group gap="xl">
-          <Button variant="subtle" onClick={() => navigate(paths.dashboard.student.archer.root)}>
+          <Button variant="subtle" onClick={() => navigate(paths.dashboard.student.timed.root)}>
             <PiArrowLeft size="xl" strokeWidth={10} /> {'  '}
             <Title order={3} mx="sm">
               Archer Page

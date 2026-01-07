@@ -33,16 +33,16 @@ export const paths = {
       groupQuesitons: {
         root: '/dashboard/admin/group-questions',
       },
-      archer: {
-        root: '/dashboard/admin/archer',
-        addQuestion: '/dashboard/admin/archer/add-question',
+      timed: {
+        root: '/dashboard/admin/timed',
+        addQuestion: '/dashboard/admin/timed/add-question',
         viewQuestions: {
-          root: '/dashboard/admin/archer/view-questions',
-          viewSpecificQuestions: '/dashboard/admin/archer/view-questions/:questionId',
+          root: '/dashboard/admin/timed/view-questions',
+          viewSpecificQuestions: '/dashboard/admin/timed/view-questions/:questionId',
         },
         manageSets: {
-          root: '/dashboard/admin/archer/manage-sets',
-          specific: '/dashboard/admin/archer/manage-sets/:setId',
+          root: '/dashboard/admin/timed/manage-sets',
+          specific: '/dashboard/admin/timed/manage-sets/:setId',
         },
       },
       users: {
@@ -69,20 +69,20 @@ export const paths = {
         root: '/dashboard/student/view-results',
         viewSpecificResults: '/dashboard/student/view-results/:resultId',
       },
-      archer: {
-        root: '/dashboard/student/archer',
+      timed: {
+        root: '/dashboard/student/timed',
         createTest: {
-          root: '/dashboard/student/archer/create-test',
+          root: '/dashboard/student/timed/create-test',
         },
         activeTest: {
-          root: '/dashboard/student/archer/active-test',
+          root: '/dashboard/student/timed/active-test',
         },
         attemptTest: {
-          root: '/dashboard/student/archer/test',
+          root: '/dashboard/student/timed/test',
         },
         viewResults: {
-          root: '/dashboard/student/archer/view-results',
-          viewSpecificResults: '/dashboard/student/archer/view-results/:testId',
+          root: '/dashboard/student/timed/view-results',
+          viewSpecificResults: '/dashboard/student/timed/view-results/:testId',
         },
       },
       video: {

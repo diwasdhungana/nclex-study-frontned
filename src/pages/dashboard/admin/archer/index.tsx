@@ -13,8 +13,8 @@ const index = () => {
     <Page title="Home" className={classes.root}>
       <Group justify="center" h="80%">
         <Stack justify="center" align="center">
-          <Title className={classes.title}> Archer Page </Title>
-          <Text>Manage Acher Questions and Sets.</Text>
+          <Title className={classes.title}> Timed Test Page </Title>
+          <Text>Manage Timed Test Questions and Sets.</Text>
           <Divider my="md" bg="red" w="100%" />
           <Group>
             <Button
@@ -30,7 +30,7 @@ const index = () => {
             <Button
               size="xl"
               onClick={() => {
-                navigate(paths.dashboard.admin.archer.addQuestion);
+                navigate(paths.dashboard.admin.timed.addQuestion);
               }}
             >
               Add Questions
@@ -38,7 +38,7 @@ const index = () => {
             <Button
               size="xl"
               onClick={() => {
-                navigate(paths.dashboard.admin.archer.viewQuestions.root);
+                navigate(paths.dashboard.admin.timed.viewQuestions.root);
               }}
             >
               View Questions
@@ -46,7 +46,7 @@ const index = () => {
             <Button
               size="xl"
               onClick={() => {
-                navigate(paths.dashboard.admin.archer.manageSets.root);
+                navigate(paths.dashboard.admin.timed.manageSets.root);
               }}
             >
               Manage Sets

@@ -143,10 +143,10 @@ export function UserEditModal({
               <Group justify="space-between" wrap="nowrap">
                 <div>
                   <Text fw={500} size="sm">
-                    Archer Eligible
+                    Time Test Eligible
                   </Text>
                   <Text size="xs" c="dimmed">
-                    Allow access to archer features
+                    Allow access to timed test features
                   </Text>
                 </div>
                 <Group gap="xs">

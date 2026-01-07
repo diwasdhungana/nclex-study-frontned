@@ -33,7 +33,8 @@ const QuestionDisplay = ({ props }: { props: any }) => {
         color: 'red',
       });
       setTimeout(() => {
-        navigate(paths.dashboard.student.archer.root);
+        navigate(paths.dashboard.student.timed.root);
+
       }, 2000); // Navigate after 2 seconds
     }
 
@@ -56,7 +57,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
           color: 'red',
         });
         setTimeout(() => {
-          navigate(paths.dashboard.student.archer.root);
+          navigate(paths.dashboard.student.timed.root);
         }, 2000); // Navigate after 2 seconds
       } else {
         setTimeRemaining(remainingTime);
@@ -165,7 +166,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
               value={thisIndex.toString()}
               onChange={(value: any) => {
                 navigate(
-                  `/dashboard/student/archer/test?testId=${testId}&i=${value}&t=${totalQuestions}`
+                  `/dashboard/student/timed/test?testId=${testId}&i=${value}&t=${totalQuestions}`
                 );
                 setTimeout(() => {
                   window.location.reload();
@@ -181,7 +182,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
             disabled={thisIndex == 0}
             onClick={() => {
               navigate(
-                `/dashboard/student/archer/test?testId=${testId}&i=${prevIndex}&t=${totalQuestions}`
+                `/dashboard/student/timed/test?testId=${testId}&i=${prevIndex}&t=${totalQuestions}`
               );
               setTimeout(() => {
                 window.location.reload();
@@ -194,7 +195,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
             disabled={thisIndex === total - 1}
             onClick={() => {
               navigate(
-                `/dashboard/student/archer/test?testId=${testId}&i=${nextIndex}&t=${totalQuestions}`
+                `/dashboard/student/timed/test?testId=${testId}&i=${nextIndex}&t=${totalQuestions}`
               );
               setTimeout(() => {
                 window.location.reload();

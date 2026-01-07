@@ -160,38 +160,38 @@ const router = createBrowserRouter([
             ],
           },
           {
-            path: paths.dashboard.admin.archer.root,
+            path: paths.dashboard.admin.timed.root,
             children: [
               {
                 index: true,
-                path: paths.dashboard.admin.archer.root,
+                path: paths.dashboard.admin.timed.root,
                 element: LazyPage(() => import('@/pages/dashboard/admin/archer/index')),
               },
               {
                 index: true,
-                path: paths.dashboard.admin.archer.addQuestion,
+                path: paths.dashboard.admin.timed.addQuestion,
                 element: LazyPage(() => import('@/pages/dashboard/admin/archer/add-questions')),
               },
               {
                 index: true,
-                path: paths.dashboard.admin.archer.viewQuestions.root,
+                path: paths.dashboard.admin.timed.viewQuestions.root,
                 element: LazyPage(() => import('@/pages/dashboard/admin/archer/view-questions')),
               },
               {
                 index: true,
-                path: paths.dashboard.admin.archer.viewQuestions.viewSpecificQuestions,
+                path: paths.dashboard.admin.timed.viewQuestions.viewSpecificQuestions,
                 element: LazyPage(
                   () => import('@/pages/dashboard/admin/archer/view-questions/Specific/index')
                 ),
               },
               {
                 index: true,
-                path: paths.dashboard.admin.archer.manageSets.root,
+                path: paths.dashboard.admin.timed.manageSets.root,
                 element: LazyPage(() => import('@/pages/dashboard/admin/archer/manage-sets/index')),
               },
               {
                 index: true,
-                path: paths.dashboard.admin.archer.manageSets.specific,
+                path: paths.dashboard.admin.timed.manageSets.specific,
                 element: LazyPage(
                   () => import('@/pages/dashboard/admin/archer/manage-sets/specific/index')
                 ),
@@ -242,7 +242,7 @@ const router = createBrowserRouter([
             ),
           },
           {
-            path: paths.dashboard.student.archer.root,
+            path: paths.dashboard.student.timed.root,
             element: (
               <ArcherGuard>
                 <StudentLayout />
@@ -251,35 +251,35 @@ const router = createBrowserRouter([
             children: [
               {
                 index: true,
-                path: paths.dashboard.student.archer.root,
+                path: paths.dashboard.student.timed.root,
 
                 element: LazyPage(() => import('@/pages/dashboard/student/archer/index')),
               },
               {
                 index: true,
-                path: paths.dashboard.student.archer.createTest.root,
+                path: paths.dashboard.student.timed.createTest.root,
                 element: LazyPage(() => import('@/pages/dashboard/student/archer/create-test')),
               },
               {
                 index: true,
-                path: paths.dashboard.student.archer.activeTest.root,
+                path: paths.dashboard.student.timed.activeTest.root,
                 element: LazyPage(() => import('@/pages/dashboard/student/archer/active-test')),
               },
               {
                 index: true,
-                path: paths.dashboard.student.archer.attemptTest.root,
+                path: paths.dashboard.student.timed.attemptTest.root,
                 element: LazyPage(() => import('@/pages/dashboard/student/archer/attempt-test')),
               },
               {
                 index: true,
-                path: paths.dashboard.student.archer.viewResults.root,
+                path: paths.dashboard.student.timed.viewResults.root,
                 element: LazyPage(
                   () => import('@/pages/dashboard/student/archer/view-results/index')
                 ),
               },
               {
                 index: true,
-                path: paths.dashboard.student.archer.viewResults.viewSpecificResults,
+                path: paths.dashboard.student.timed.viewResults.viewSpecificResults,
                 element: LazyPage(
                   () => import('@/pages/dashboard/student/archer/view-results/specific/index')
                 ),

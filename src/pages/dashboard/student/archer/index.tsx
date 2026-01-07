@@ -29,7 +29,7 @@ const index = () => {
     <Page title="Home" className={classes.root}>
       <Group justify="center" h="80%">
         <Stack justify="center" align="center">
-          <Title className={classes.title}> Archer Test Page </Title>
+          <Title className={classes.title}> Timed Test Page </Title>
           <Text>Timed test you must finish within 2 hours 30 minutes. </Text>
           <Divider my="md" bg="red" w="100%" />
           <Group>
@@ -46,28 +46,28 @@ const index = () => {
             <Button
               size="xl"
               onClick={() => {
-                navigate(paths.dashboard.student.archer.createTest.root);
+                navigate(paths.dashboard.student.timed.createTest.root);
               }}
             >
-              New Archer Test
+              New Timed Test
             </Button>
             {showActiveTests && (
               <Button
                 size="xl"
                 onClick={() => {
-                  navigate(paths.dashboard.student.archer.activeTest.root);
+                  navigate(paths.dashboard.student.timed.activeTest.root);
                 }}
               >
-                Active Archer Test
+                Active Timed Test
               </Button>
             )}
             <Button
               size="xl"
               onClick={() => {
-                navigate(paths.dashboard.student.archer.viewResults.root);
+                navigate(paths.dashboard.student.timed.viewResults.root);
               }}
             >
-              Archer Results
+             Timed Test Results
             </Button>
           </Group>
         </Stack>
