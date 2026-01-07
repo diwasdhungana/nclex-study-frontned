@@ -168,7 +168,7 @@ export function UserEditModal({
                 </Group>
               </Group>
 
-              <Divider />
+              {/* <Divider />
 
               <Group justify="space-between" wrap="nowrap">
                 <div>
@@ -196,7 +196,7 @@ export function UserEditModal({
                     size="md"
                   />
                 </Group>
-              </Group>
+              </Group> */}
 
               <Divider />
 

@@ -75,7 +75,7 @@ const index = () => {
               <PiUsersBold size={20} />
               &nbsp; User Management
             </Button>
-            <Button
+            {/* <Button
               bg={'blue'}
               size="xl"
               onClick={() => {
@@ -84,7 +84,7 @@ const index = () => {
             >
               <PiVideoBold size={20} />
               &nbsp; Class Recordings
-            </Button>
+            </Button> */}
           </Group>
         </Stack>
       </Group>

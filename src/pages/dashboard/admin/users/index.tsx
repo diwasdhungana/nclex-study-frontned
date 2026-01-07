@@ -283,7 +283,7 @@ const UserManagement = () => {
             <Table.Th>Email</Table.Th>
             <Table.Th>Logout</Table.Th>
             {type != 'admin' && <Table.Th>Archer Eligible</Table.Th>}
-            {type != 'admin' && <Table.Th>Video Eligible</Table.Th>}
+            {/* {type != 'admin' && <Table.Th>Video Eligible</Table.Th>} */}
             {type != 'admin' && <Table.Th>User Enabled</Table.Th>}
             <Table.Th>Actions</Table.Th>
           </Table.Tr>
@@ -378,13 +378,13 @@ const UserManagement = () => {
                   </Badge>
                 </Table.Td>
               )}
-              {type != 'admin' && (
+              {/* {type != 'admin' && (
                 <Table.Td>
                   <Badge color={user.classRecordingEligible ? 'green' : 'red'} variant="light">
                     {user.classRecordingEligible ? 'Eligible' : 'Not Eligible'}
                   </Badge>
                 </Table.Td>
-              )}
+              )} */}
               {type != 'admin' && (
                 <Table.Td>
                   <Badge color={!user.deleted ? 'green' : 'red'} variant="light">

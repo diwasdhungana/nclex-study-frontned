@@ -77,7 +77,7 @@ const index = () => {
                 Visit Timed Test
               </Button>
             )}
-            {user.classRecordingEligible && (
+            {/* {user.classRecordingEligible && (
               <Button
                 bg="blue"
                 size="xl"
@@ -88,7 +88,7 @@ const index = () => {
                 <PiVideoBold size={20} />
                 &nbsp; Class Recordings
               </Button>
-            )}
+            )} */}
           </Group>
         </Stack>
       </Group>
