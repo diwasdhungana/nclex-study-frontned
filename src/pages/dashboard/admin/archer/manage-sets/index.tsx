@@ -38,7 +38,7 @@ const ViewQuestions = () => {
     <Page title="View Questions">
       <Stack>
         <Group gap="xl" justify="space-between">
-          <Button variant="subtle" onClick={() => navigate(paths.dashboard.admin.archer.root)}>
+          <Button variant="subtle" onClick={() => navigate(paths.dashboard.admin.timed.root)}>
             <PiArrowLeft size="xl" strokeWidth={10} />
             <Title order={3} mx="sm">
               Archer Page
@@ -88,7 +88,7 @@ const ViewQuestions = () => {
                         <Button
                           variant="subtle"
                           onClick={() =>
-                            navigate(`${paths.dashboard.admin.archer.manageSets.root}/${set._id}`)
+                            navigate(`${paths.dashboard.admin.timed.manageSets.root}/${set._id}`)
                           }
                         >
                           Reorder Questions

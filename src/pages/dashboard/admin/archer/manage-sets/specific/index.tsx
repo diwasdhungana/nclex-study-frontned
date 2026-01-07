@@ -48,7 +48,7 @@ const SpecificQuestion = () => {
         <Group gap="xl" justify="space-between">
           <Button
             variant="subtle"
-            onClick={() => navigate(paths.dashboard.admin.archer.manageSets.root)}
+            onClick={() => navigate(paths.dashboard.admin.timed.manageSets.root)}
           >
             <PiArrowLeft size="xl" strokeWidth={10} />
             <Title order={3} mx="sm">

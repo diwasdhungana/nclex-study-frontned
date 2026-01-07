@@ -36,8 +36,8 @@ const QuestionReorder = ({ questions, onReorder, isLoading = false }: QuestionRe
 
   const handleTagDoubleClick = (questionId: string) => {
     // on a new tab
-    window.open(paths.dashboard.admin.archer.viewQuestions.root + '/' + questionId, '_blank');
-    // navigate(paths.dashboard.admin.archer.viewQuestions.root + '/' + questionId);
+    window.open(paths.dashboard.admin.timed.viewQuestions.root + '/' + questionId, '_blank');
+    // navigate(paths.dashboard.admin.timed.viewQuestions.root + '/' + questionId);
   };
 
   const handleSaveOrder = () => {

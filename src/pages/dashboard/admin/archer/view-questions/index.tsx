@@ -122,7 +122,7 @@ const ViewQuestions = () => {
     <Page title="View Questions">
       <Stack>
         <Group gap="xl" justify="space-between">
-          <Button variant="subtle" onClick={() => navigate(paths.dashboard.admin.archer.root)}>
+          <Button variant="subtle" onClick={() => navigate(paths.dashboard.admin.timed.root)}>
             <PiArrowLeft size="xl" strokeWidth={10} />
             <Title order={3} mx="sm">
               Admin Page
@@ -194,7 +194,7 @@ const ViewQuestions = () => {
                         dangerouslySetInnerHTML={{ __html: question.title }}
                         onClick={() =>
                           navigate(
-                            paths.dashboard.admin.archer.viewQuestions.root + '/' + question._id
+                            paths.dashboard.admin.timed.viewQuestions.root + '/' + question._id
                           )
                         }
                         style={{ cursor: 'pointer' }}
