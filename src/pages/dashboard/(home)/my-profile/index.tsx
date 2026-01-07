@@ -43,7 +43,7 @@ const ProfileUpdate = () => {
     validate: {
       name: (value) => (value.trim().length > 0 ? null : 'Name is required'),
       email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
-      phoneNumber: (value) => (value.trim().length > 0 ? null : 'Phone number is required'),
+      phoneNumber: (value) => (value.trim().length > 0 ? null : 'User Id is required'),
       password: (value) => {
         if (value && value.length < 6) {
           return 'Password must be at least 6 characters';
@@ -149,8 +149,8 @@ const ProfileUpdate = () => {
               />
 
               <TextInput
-                label="Phone Number"
-                placeholder="Enter your phone number"
+                label="User Id"
+                placeholder="Enter your user id"
                 {...form.getInputProps('phoneNumber')}
               />
 

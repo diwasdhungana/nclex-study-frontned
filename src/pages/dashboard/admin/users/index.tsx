@@ -279,7 +279,7 @@ const UserManagement = () => {
           <Table.Tr>
             <Table.Th>S.N</Table.Th>
             <Table.Th>Name</Table.Th>
-            <Table.Th>Phone Number</Table.Th>
+            <Table.Th>User Id</Table.Th>
             <Table.Th>Email</Table.Th>
             <Table.Th>Logout</Table.Th>
             {type != 'admin' && <Table.Th>Archer Eligible</Table.Th>}
