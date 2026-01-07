@@ -11,11 +11,22 @@ export function Header() {
   return (
     <StickyHeader className={classes.root}>
       <Group>
+        <Link to="/"
+        //open new tab on control click without effecting the old tab
+        onClick={(e) => {
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            window.open('/', '_blank'); 
+
+          }
+        }}
+     
+        >
+
         <LogoImage
-          onClick={() => {
-            window.location.href = '/';
-          }}
-        />
+          
+          />
+          </Link>
       </Group>
       <Group>
         <ColorSchemeToggler />

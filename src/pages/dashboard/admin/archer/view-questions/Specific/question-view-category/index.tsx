@@ -115,7 +115,7 @@ const SelectOnewithModes = ({ data, mode }: SelectOnewithModesProps) => {
   const isImageUrl = (str: string): boolean => {
     // Check if the string contains your S3 bucket URL or is a valid image URL
     return (
-      str.startsWith('https://s3.ap-south-1.amazonaws.com/nclexstudy/') ||
+      str.startsWith('https://s3.ap-south-1.amazonaws.com/gracern/') ||
       str.match(/\.(jpeg|jpg|gif|png)$/) !== null
     );
   };
@@ -441,7 +441,7 @@ const McqwithModes = ({ data, mode }: McqwithModesProps) => {
   // Function to check if a string is an image URL
   const isImageUrl = (str: string): boolean => {
     return (
-      str.startsWith('https://s3.ap-south-1.amazonaws.com/nclexstudy/') ||
+      str.startsWith('https://s3.ap-south-1.amazonaws.com/gracern/') ||
       str.match(/\.(jpeg|jpg|gif|png)$/) !== null
     );
   };
