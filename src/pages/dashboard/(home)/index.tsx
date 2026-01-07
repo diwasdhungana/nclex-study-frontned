@@ -32,10 +32,15 @@ export default function HomePage() {
         <Stack justify="center" align="center">
           <Title className={classes.title}>Welcome to Nclex Study's </Title>
           <Title className={classes.title}> NCLEX practice app </Title>
-          <Text>other pages will be available very soon.</Text>
+          <Text>Please proceed to login by refreshing this page.</Text>
           <Divider my="md" bg="red" w="100%" />
-          <Button size="xl" onClick={handleGotoAdminPanel} w="200px">
-            Admin Page
+          <Button size="xl" onClick={
+            () => {
+              window.location.reload();
+            }
+          }
+             w="200px">
+            Refresh Page
           </Button>
         </Stack>
       </Group>
