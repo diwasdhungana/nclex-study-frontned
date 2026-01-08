@@ -13,21 +13,22 @@ export default function LoginPage() {
         <Stack>
           <Title order={2}>
             Welcome to{' '}
-            <Text fz="inherit" fw="inherit" component="span" pos="relative">
+            <Text fz="inherit" fw="inherit" component="span" pos="relative" c="#7e22ce">
               Nclex Study
-              <UnderlineShape
-                c="blue"
+              
+            </Text>{' '}
+            <br />
+            <br />
+            <Text mt="sxl" fz="xl" fw="inherit" component="span" pos="relative">
+              Please login to continue..
+            <UnderlineShape
+                c="#7e22ce"
                 left="0"
                 pos="absolute"
                 h="0.625rem"
                 bottom="-1rem"
                 w="7rem"
               />
-            </Text>{' '}
-            <br />
-            <br />
-            <Text mt="sxl" fz="xl" fw="inherit" component="span" pos="relative">
-              Please login to continue..
             </Text>
           </Title>
         </Stack>
