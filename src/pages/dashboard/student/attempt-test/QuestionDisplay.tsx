@@ -115,9 +115,6 @@ const QuestionDisplay = ({ props }: { props: any }) => {
               value={thisIndex.toString()}
               onChange={(value: any) => {
                 navigate(`/dashboard/student/test?testId=${testId}&i=${value}&t=${totalQuestions}`);
-                setTimeout(() => {
-                  window.location.reload();
-                }, 10);
               }}
             />
           ) : (

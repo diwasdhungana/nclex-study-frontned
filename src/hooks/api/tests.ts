@@ -26,7 +26,7 @@ export const useCreateArcherTest = createPostMutationHook({
   endpoint: '/archer/tests',
   rMutationParams: {
     onSuccess: (data) => {
-      window.location.href = '/dashboard/student/archer/active-test';
+      window.location.href = '/dashboard/student/timed/active-test';
       notifications.show({ message: 'Test created successfully', color: 'green' });
       queryClient.invalidateQueries(['myarchertests'] as InvalidateQueryFilters);
     },
@@ -83,8 +83,9 @@ export const usePostAnswer = createPostMutationHook({
         message: 'Answer Submitted',
         color: 'green',
       });
+      queryClient.invalidateQueries(['getSpecificTestQuestion'] as InvalidateQueryFilters);
+      queryClient.invalidateQueries(['mytests'] as InvalidateQueryFilters);
       return data;
-      // queryClient.invalidateQueries(['getSpecificTestQuestion'] as any);
     },
     onError: (error) => {
       notifications.show({ message: error.messages[0], color: 'red' });
@@ -100,7 +101,8 @@ export const usePostArcherAnswer = createPostMutationHook({
         message: 'Answer Submitted',
         color: 'green',
       });
-      queryClient.invalidateQueries(['getSpecificArcherTestQuestion', 'myarchertests'] as any);
+      queryClient.invalidateQueries(['getSpecificArcherTestQuestion'] as InvalidateQueryFilters);
+      queryClient.invalidateQueries(['myarchertests'] as InvalidateQueryFilters);
       return data;
     },
     onError: (error) => {

@@ -148,10 +148,6 @@ const QuestionDisplay = ({ props }: { props: any }) => {
           <Button
             onClick={() => {
               navigate(paths.dashboard.student.root);
-              // Delay the reload to ensure navigation completes
-              setTimeout(() => {
-                window.location.reload();
-              }, 20); // 100ms delay (adjust as needed)
             }}
           >
             Back to Home Screen
@@ -168,9 +164,6 @@ const QuestionDisplay = ({ props }: { props: any }) => {
                 navigate(
                   `/dashboard/student/timed/test?testId=${testId}&i=${value}&t=${totalQuestions}`
                 );
-                setTimeout(() => {
-                  window.location.reload();
-                }, 10);
               }}
             />
           ) : (
@@ -184,9 +177,6 @@ const QuestionDisplay = ({ props }: { props: any }) => {
               navigate(
                 `/dashboard/student/timed/test?testId=${testId}&i=${prevIndex}&t=${totalQuestions}`
               );
-              setTimeout(() => {
-                window.location.reload();
-              }, 20);
             }}
           >
             Previous
@@ -197,9 +187,6 @@ const QuestionDisplay = ({ props }: { props: any }) => {
               navigate(
                 `/dashboard/student/timed/test?testId=${testId}&i=${nextIndex}&t=${totalQuestions}`
               );
-              setTimeout(() => {
-                window.location.reload();
-              }, 10);
             }}
           >
             Next

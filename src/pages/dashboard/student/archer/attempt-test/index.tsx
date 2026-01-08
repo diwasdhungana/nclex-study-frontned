@@ -27,6 +27,7 @@ const index = () => {
       {errorQuestion && <div>error...</div>}
       {question && (
         <QuestionDisplay
+          key={`${searchParams.get('testId')}-${searchParams.get('i')}`}
           props={{
             question,
             mode: 'student',
