@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Center, createTheme, Loader, MantineThemeProvider, Progress, Stack } from '@mantine/core';
 import logoImage from '../assets/logoImage.png';
-import { RingLoader } from './RIngLoader';
+import { RingLoader } from './RingLoader';
 
 
 const styles = `
