@@ -125,6 +125,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
             onClick={() => {
               openModal();
             }}
+            bg="#ff4136"
           >
             Suspend
           </Button>

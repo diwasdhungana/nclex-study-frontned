@@ -122,7 +122,7 @@ export const SelectOnewithModes = ({ data, mode }: { data: any; mode: any }) => 
 
       {!attempted ? (
         <Stack>
-          {errorMessage && <Text c="red">{errorMessage}</Text>}
+          {errorMessage && <Text c="#ff4136">{errorMessage}</Text>}
           <Group>
             <Button loading={postAnswerPending} onClick={handleSubmit}>
               Submit
@@ -131,7 +131,7 @@ export const SelectOnewithModes = ({ data, mode }: { data: any; mode: any }) => 
         </Stack>
       ) : (
         <Stack>
-          {errorMessage && <Text c="red">{errorMessage}</Text>}
+          {errorMessage && <Text c="#ff4136">{errorMessage}</Text>}
           <Group>
             <Button loading={postAnswerPending} disabled bg="green.1">
               Submitted

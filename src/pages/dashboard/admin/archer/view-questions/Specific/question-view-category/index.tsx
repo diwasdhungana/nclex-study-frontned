@@ -580,7 +580,7 @@ const DragNDropwithModes = ({ data, mode }: { data: any; mode: any }) => {
 
       {renderContent()}
       {data.answersMustBeConsecutive && (
-        <Text size="sm" c="red">
+        <Text size="sm" c="#ff4136">
           Answers must be consecutive. (This text is not visible to students.)
         </Text>
       )}
@@ -717,7 +717,7 @@ const BowTiewithModes = ({ data, mode }: { data: any; mode: any }) => {
           false
         )}
         {/* {item.lifted ? (
-          <Text size="sm" c="red">
+          <Text size="sm" c="#ff4136">
             ✗
           </Text>
         ) : (

@@ -91,7 +91,7 @@ const QuestionSets = () => {
   if (setsError) {
     return (
       <Stack align="center" mt="xl">
-        <Text color="red">Failed to load question sets. Please try again later.</Text>
+        <Text color="#ff4136">Failed to load question sets. Please try again later.</Text>
         <Button onClick={() => window.location.reload()}>Reload Page</Button>
       </Stack>
     );
@@ -197,7 +197,7 @@ const QuestionSets = () => {
                 {questionsToRemove.length > 0 && (
                   <Button
                     onClick={() => handleRemoveQuestions(set._id, set.questions)}
-                    color="red"
+                    color="#ff4136"
                     variant="light"
                     disabled={putSetQuestionsLoading}
                     loading={putSetQuestionsLoading}

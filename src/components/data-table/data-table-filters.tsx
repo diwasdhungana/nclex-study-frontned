@@ -45,7 +45,7 @@ export const DataTableFilters = forwardRef<HTMLDivElement, DataTableFiltersProps
             <Button
               variant="subtle"
               size="compact-xs"
-              color="red"
+              color="#ff4136"
               leftSection={<ClearIcon size="1rem" />}
               onClick={onClear}
             >

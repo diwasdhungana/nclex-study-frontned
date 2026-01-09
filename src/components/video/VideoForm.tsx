@@ -203,7 +203,7 @@ export const VideoForm = ({
           <Group justify="space-between" mt="md">
             {isEdit && (
               <Button
-                color="red"
+                color="#ff4136"
                 variant="light"
                 onClick={onDelete}
                 loading={isDeleting}

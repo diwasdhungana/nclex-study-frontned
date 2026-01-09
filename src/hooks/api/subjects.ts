@@ -21,7 +21,7 @@ export const usePostSubject = createPostMutationHook({
       queryClient.invalidateQueries(['subjects'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -33,7 +33,7 @@ export const usePutSubject = createPutMutationHook({
       queryClient.invalidateQueries(['subjects'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });

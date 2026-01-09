@@ -96,7 +96,7 @@ export const FillBlankswithModes = ({ data, mode }: { data: any; mode: any }) =>
       {/* Submit Button or Result Display */}
       {!attempted ? (
         <Stack>
-          {errorMessage && <Text c="red">{errorMessage}</Text>}
+          {errorMessage && <Text c="#ff4136">{errorMessage}</Text>}
           <Group>
             <Button loading={postAnswerPending} onClick={handleSubmit}>
               Submit
@@ -116,7 +116,7 @@ export const FillBlankswithModes = ({ data, mode }: { data: any; mode: any }) =>
               incomingData?.status === 'correct'
                 ? 'green.3'
                 : incomingData?.status === 'incorrect'
-                  ? 'red.3'
+                  ? '#ff6259'
                   : 'grey.2'
             }
           >
@@ -258,7 +258,7 @@ export const FillBlankswithModes = ({ data, mode }: { data: any; mode: any }) =>
 //       {/* Submit Button or Result Display */}
 //       {!attempted ? (
 //         <Stack>
-//           {errorMessage && <Text c="red">{errorMessage}</Text>}
+//           {errorMessage && <Text c="#ff4136">{errorMessage}</Text>}
 //           <Group>
 //             <Button loading={postAnswerPending} onClick={handleSubmit}>
 //               Submit
@@ -278,7 +278,7 @@ export const FillBlankswithModes = ({ data, mode }: { data: any; mode: any }) =>
 //               incomingData?.status === 'correct'
 //                 ? 'green.3'
 //                 : incomingData?.status === 'incorrect'
-//                   ? 'red.3'
+//                   ? '#ff6259'
 //                   : 'grey.2'
 //             }
 //           >
@@ -467,7 +467,7 @@ export const FillBlankswithModes = ({ data, mode }: { data: any; mode: any }) =>
 //       {/* Submit Button or Result Display */}
 //       {!attempted ? (
 //         <Stack>
-//           {errorMessage && <Text c="red">{errorMessage}</Text>}
+//           {errorMessage && <Text c="#ff4136">{errorMessage}</Text>}
 //           <Group>
 //             <Button loading={postAnswerPending} onClick={handleSubmit}>
 //               Submit
@@ -487,7 +487,7 @@ export const FillBlankswithModes = ({ data, mode }: { data: any; mode: any }) =>
 //               incomingData?.status === 'correct'
 //                 ? 'green.3'
 //                 : incomingData?.status === 'incorrect'
-//                   ? 'red.3'
+//                   ? '#ff6259'
 //                   : 'grey.2'
 //             }
 //           >

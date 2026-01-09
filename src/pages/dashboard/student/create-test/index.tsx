@@ -138,7 +138,7 @@ const index = () => {
                 </Group>
               ))}
             </Group>
-            <Divider my="md" bg="red" w="100%" />
+            <Divider my="md" bg="#ff4136" w="100%" />
           </Group>
           {subjectsData?.data?.docs && (
             <Group>
@@ -197,7 +197,7 @@ const index = () => {
               </SimpleGrid>
             </Group>
           )}
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
           {!systemsDataError && (
             <Group>
               <Group align="center">
@@ -257,7 +257,7 @@ const index = () => {
               </SimpleGrid>
             </Group>
           )}
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
 
           <Group>
             <Text fw={700} size="lg">
@@ -283,7 +283,7 @@ const index = () => {
               ))}
             </Group>
           </Group>
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
           <Group>
             <Text fw={700} size="lg">
               Number of Questions :{' '}

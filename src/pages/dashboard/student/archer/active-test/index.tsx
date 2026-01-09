@@ -58,7 +58,7 @@ const Index = () => {
         <Paper shadow="xs" p="lg" radius="lg">
           <Stack ml="md">
             <Title order={2}>Active Tests</Title>
-            <Divider my="md" bg="red" w="100%" />
+            <Divider my="md" bg="#ff4136" w="100%" />
             {activeTestsData.length === 0 ? (
               <Text>No active tests.</Text>
             ) : (

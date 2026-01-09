@@ -13,7 +13,7 @@ export const useLogin = createPostMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -26,7 +26,7 @@ export const useLogout = createPostMutationHook({
       notifications.show({ title: 'Goodbye!', message: 'You have successfully logged out' });
     },
     onError: (error) => {
-      notifications.show({ message: error.message, color: 'red' });
+      notifications.show({ message: error.message, color: '#ff4136' });
     },
   },
 });

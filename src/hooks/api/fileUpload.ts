@@ -16,7 +16,7 @@ export const useFileUpload = createPostMutationHook({
       notifications.show({ message: 'Image saved Uploaded' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
   options: {
@@ -32,7 +32,7 @@ export const useDeleteOneUser = createDeleteMutationHook({
       notifications.show({ title: 'User Deleted', message: 'done.' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -45,7 +45,7 @@ export const useDeleteManyDocument = createDeleteManyMutationHook({
       notifications.show({ title: 'Documents Deleted', message: 'done.' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -58,7 +58,7 @@ export const useEditDocuments = createPutMutationHook({
       notifications.show({ title: 'document Edited!', message: 'done.' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -70,7 +70,7 @@ export const useEditDocumentNotify = createPutMutationHook({
       queryClient.invalidateQueries(['getDocumentNotify'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -83,7 +83,7 @@ export const usePostDocument = createPostMutationHook({
       notifications.show({ message: 'Document Uploaded' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });

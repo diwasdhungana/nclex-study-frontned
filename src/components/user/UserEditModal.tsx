@@ -217,7 +217,7 @@ export function UserEditModal({
                       handleToggleUpdate(onUpdateUserEnabled, user._id, user.deleted, 'enabled')
                     }
                     disabled={isUpdating === 'enabled'}
-                    color={!user.deleted ? 'green' : 'red'}
+                    color={!user.deleted ? 'green' : '#ff4136'}
                     size="md"
                   />
                 </Group>

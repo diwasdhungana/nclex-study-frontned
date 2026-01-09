@@ -21,7 +21,7 @@ export const usePostSystem = createPostMutationHook({
       queryClient.invalidateQueries(['systems'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -33,7 +33,7 @@ export const usePutSystem = createPutMutationHook({
       queryClient.invalidateQueries(['systems'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });

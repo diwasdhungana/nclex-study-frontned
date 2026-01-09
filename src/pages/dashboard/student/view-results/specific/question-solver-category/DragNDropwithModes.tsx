@@ -149,7 +149,7 @@ export const DragNDropwithModes = ({ data, mode }: { data: any; mode: any }) => 
                         ✓
                       </Text>
                     ) : (
-                      <Text c="red" size="md">
+                      <Text c="#ff4136" size="md">
                         (
                         {
                           incommingData?.correctAnswers?.find(
@@ -230,7 +230,7 @@ export const DragNDropwithModes = ({ data, mode }: { data: any; mode: any }) => 
                 : incommingData?.status === 'partially correct'
                   ? 'green.2'
                   : incommingData?.status === 'incorrect'
-                    ? 'red.3'
+                    ? '#ff6259'
                     : 'grey.2'
             }
           >

@@ -95,7 +95,7 @@ const index = () => {
                         New Test by {test.user.name}
                       </Text>
                     </Group>
-                    <Divider my="md" bg="red" w="100%" />
+                    <Divider my="md" bg="#ff4136" w="100%" />
                     <Group>
                       <Text fw={600} size="lg">
                         Systems :{' '}
@@ -129,7 +129,7 @@ const index = () => {
                       <Button
                         size="md"
                         variant="outline"
-                        // bg="red"
+                        bg="#ff4136"
                         onClick={() => {
                           openModal(test._id);
                         }}
@@ -139,7 +139,7 @@ const index = () => {
                       <Button
                         size="md"
                         variant="filled"
-                        bg="red"
+                        bg="#ff4136"
                         onClick={() => {
                           test.questions.length > 0 && handleStartTest(test);
                         }}

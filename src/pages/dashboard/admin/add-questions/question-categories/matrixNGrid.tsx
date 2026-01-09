@@ -59,7 +59,7 @@ export const MatrixNGrid = ({ dataTunnel, response, setResponse }: any) => {
         />
       </Group>
       <InputLabel>Main Question (Title)</InputLabel>
-      {response.titleError && <Text c="red">{response.titleError}</Text>}
+      {response.titleError && <Text c="#ff4136">{response.titleError}</Text>}
       <RichTextEditorComponent
         content={title}
         setContent={(item, index) => {
@@ -139,7 +139,7 @@ export const MatrixNGrid = ({ dataTunnel, response, setResponse }: any) => {
           w="200px"
         />
       </Group>
-      {response.optionsError && <Text c="red">{response.optionsError}</Text>}
+      {response.optionsError && <Text c="#ff4136">{response.optionsError}</Text>}
 
       <Table mt="lg">
         <Table.Thead>
@@ -219,7 +219,7 @@ export const MatrixNGrid = ({ dataTunnel, response, setResponse }: any) => {
       </Table>
 
       <InputLabel mt="lg">Explanation (Shown after Answer Submit.)</InputLabel>
-      {response.explanationError && <Text c="red">{response.explanationError}</Text>}
+      {response.explanationError && <Text c="#ff4136">{response.explanationError}</Text>}
 
       <RichTextEditorComponent
         content={explanation}

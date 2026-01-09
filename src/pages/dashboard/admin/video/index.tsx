@@ -48,7 +48,7 @@ export default function AdminVideoPage() {
       centered: true,
       children: <Text size="sm">Are you sure you want to delete this particular video?</Text>,
       labels: { confirm: 'Delete Video', cancel: "No don't delete it" },
-      confirmProps: { color: 'red' },
+      confirmProps: { color: '#ff4136' },
       onConfirm: () => deleteMutation.mutate({ route: { id: video._id } }),
       onWaiting: () => modals.openContextModal('Deleting Video...' as any),
     });

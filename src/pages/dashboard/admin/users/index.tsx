@@ -345,7 +345,7 @@ const UserManagement = () => {
               <Table.Td colSpan={type === 'admin' ? 1 : 4}>
                 <Button
                   variant="light"
-                  color="red"
+                  color="#ff4136"
                   onClick={() => {
                     if (type === 'admin') {
                       setNewAdminUsers(newAdminUsers.filter((_: any, i: any) => i !== index));
@@ -366,28 +366,28 @@ const UserManagement = () => {
               <Table.Td>{user.phoneNumber}</Table.Td>
               <Table.Td>{user.email || 'N/A'}</Table.Td>
               <Table.Td>
-                <Button color="red" size="xs" onClick={() => handleLogoutUser(user._id)}>
+                <Button color="#ff4136" size="xs" onClick={() => handleLogoutUser(user._id)}>
                   Logout
                 </Button>
               </Table.Td>
 
               {type != 'admin' && (
                 <Table.Td>
-                  <Badge color={user.archerEligible ? 'green' : 'red'} variant="light">
+                  <Badge color={user.archerEligible ? 'green' : '#ff4136'} variant="light">
                     {user.archerEligible ? 'Eligible' : 'Not Eligible'}
                   </Badge>
                 </Table.Td>
               )}
               {/* {type != 'admin' && (
                 <Table.Td>
-                  <Badge color={user.classRecordingEligible ? 'green' : 'red'} variant="light">
+                  <Badge color={user.classRecordingEligible ? 'green' : '#ff4136'} variant="light">
                     {user.classRecordingEligible ? 'Eligible' : 'Not Eligible'}
                   </Badge>
                 </Table.Td>
               )} */}
               {type != 'admin' && (
                 <Table.Td>
-                  <Badge color={!user.deleted ? 'green' : 'red'} variant="light">
+                  <Badge color={!user.deleted ? 'green' : '#ff4136'} variant="light">
                     {!user.deleted ? 'Enabled' : 'Disabled'}
                   </Badge>
                 </Table.Td>
@@ -414,7 +414,7 @@ const UserManagement = () => {
           <Alert
             icon={<IconAlertCircle size="1rem" />}
             title="Error Loading Users"
-            color="red"
+            color="#ff4136"
             variant="filled"
           >
             Unable to load user data. Please try again later.

@@ -33,7 +33,7 @@ export default function HomePage() {
           <Title className={classes.title}>Welcome to Nclex Study's </Title>
           <Title className={classes.title}> NCLEX practice app </Title>
           <Text>Please proceed to login by refreshing this page.</Text>
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
           <Button size="xl" onClick={
             () => {
               window.location.reload();

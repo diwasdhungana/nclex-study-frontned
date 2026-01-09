@@ -51,7 +51,7 @@ export default function AdminVideoPage() {
           refetch();
         },
         onError: () => {
-          notifications.show({ message: 'Error deleting video', color: 'red' });
+          notifications.show({ message: 'Error deleting video', color: '#ff4136' });
         },
       }
     );

@@ -99,7 +99,7 @@ export const Settings = ({ dataTunnel, response, setResponse }: any) => {
       {hasTabsInAssistance && hasAssistanceColumn && (
         <Spoiler
           maxHeight={0}
-          showLabel={<Button bg="red">View Tabs</Button>}
+          showLabel={<Button bg="#ff4136">View Tabs</Button>}
           hideLabel={
             <Button mt="xs" bg="green">
               Save And Close Tabs
@@ -124,7 +124,7 @@ export const Settings = ({ dataTunnel, response, setResponse }: any) => {
               >
                 New Tab
               </Button>
-              <Button bg="red" onClick={() => setTabsData({ title: [], content: [] })}>
+              <Button bg="#ff4136" onClick={() => setTabsData({ title: [], content: [] })}>
                 Clear All Tabs
               </Button>
             </Group>
@@ -152,7 +152,7 @@ export const Settings = ({ dataTunnel, response, setResponse }: any) => {
                             setTabsData({ title: newTitle, content: newContent });
                           }}
                         >
-                          <Text ta="center" c="red" fw="bold">
+                          <Text ta="center" c="#ff4136" fw="bold">
                             X
                           </Text>
                         </Button>
@@ -184,7 +184,7 @@ export const Settings = ({ dataTunnel, response, setResponse }: any) => {
       {!hasTabsInAssistance && hasAssistanceColumn && (
         <Spoiler
           maxHeight={0}
-          showLabel={<Button bg="red">Add Assistance Page Data</Button>}
+          showLabel={<Button bg="#ff4136">Add Assistance Page Data</Button>}
           hideLabel={
             <Button mt="xs" bg="green">
               Save And Close Assistance Page
@@ -204,7 +204,7 @@ export const Settings = ({ dataTunnel, response, setResponse }: any) => {
           </Stack>
         </Spoiler>
       )}
-      {response.assiatanceError && <Text c="red">{response.assiatanceError}</Text>}
+      {response.assiatanceError && <Text c="#ff4136">{response.assiatanceError}</Text>}
 
       {renderQuestionType(
         dataTunnel,

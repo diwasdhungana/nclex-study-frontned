@@ -61,7 +61,7 @@ export const useCreateClassRecording = createPostMutationHook({
     onError: (error) => {
       notifications.show({
         message: error.messages[0] || 'Failed to upload recording',
-        color: 'red',
+        color: '#ff4136',
       });
     },
   },
@@ -81,7 +81,7 @@ export const useUpdateClassRecording = createPutMutationHook({
     onError: (error) => {
       notifications.show({
         message: error.messages[0] || 'Failed to update recording',
-        color: 'red',
+        color: '#ff4136',
       });
     },
   },
@@ -101,7 +101,7 @@ export const useActivateClassRecording = createPatchMutationHook({
     onError: (error) => {
       notifications.show({
         message: error.messages[0] || 'Failed to activate recording',
-        color: 'red',
+        color: '#ff4136',
       });
     },
   },
@@ -121,7 +121,7 @@ export const useDeleteClassRecording = createDeleteMutationHook({
     onError: (error) => {
       notifications.show({
         message: error.messages[0] || 'Failed to delete recording',
-        color: 'red',
+        color: '#ff4136',
       });
     },
   },

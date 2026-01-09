@@ -70,9 +70,9 @@ export const SelectOne = ({ dataTunnel, response, setResponse }: any) => {
         },
         onError: (error) => {
           if (error.messages?.[0]) {
-            notifications.show({ message: error.messages[0], color: 'red' });
+            notifications.show({ message: error.messages[0], color: '#ff4136' });
           } else {
-            notifications.show({ message: 'Uploads will be available soon.', color: 'red' });
+            notifications.show({ message: 'Uploads will be available soon.', color: '#ff4136' });
           }
         },
       }
@@ -104,12 +104,12 @@ export const SelectOne = ({ dataTunnel, response, setResponse }: any) => {
         />
       </Group>
       <InputLabel>Main Question (Title)</InputLabel>
-      {response.titleError && <Text c="red">{response.titleError}</Text>}
+      {response.titleError && <Text c="#ff4136">{response.titleError}</Text>}
       <RichTextEditorComponent content={title} setContent={(item) => setTitle(item)} index={0} />
 
       <Stack mt="md">
         <InputLabel required>Options :</InputLabel>
-        {response.optionsError && <Text c="red">{response.optionsError}</Text>}
+        {response.optionsError && <Text c="#ff4136">{response.optionsError}</Text>}
         {options.map((option, index) => (
           <Group gap="xs" key={index} w="100%" align="flex-start">
             <Radio
@@ -196,7 +196,7 @@ export const SelectOne = ({ dataTunnel, response, setResponse }: any) => {
       <InputLabel mt="lg" required>
         Explanation (Shown after Answer Submit.)
       </InputLabel>
-      {response.explanationError && <Text c="red">{response.explanationError}</Text>}
+      {response.explanationError && <Text c="#ff4136">{response.explanationError}</Text>}
       <RichTextEditorComponent
         content={explanation}
         setContent={(item) => setExplanation(item)}

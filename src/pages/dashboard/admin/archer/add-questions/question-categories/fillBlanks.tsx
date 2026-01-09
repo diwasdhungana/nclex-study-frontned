@@ -139,7 +139,7 @@
 
 //       {/* Question Editor */}
 //       <InputLabel required>Question</InputLabel>
-//       {response.questionError && <Text color="red">{response.questionError}</Text>}
+//       {response.questionError && <Text color="#ff4136">{response.questionError}</Text>}
 //       <RichTextEditorComponent
 //         content={question}
 //         setContent={setQuestion}
@@ -155,7 +155,7 @@
 //       {/* Blanks Management */}
 //       <Stack mt="md">
 //         <InputLabel required>Blanks:</InputLabel>
-//         {response.blanksError && <Text color="red">{response.blanksError}</Text>}
+//         {response.blanksError && <Text color="#ff4136">{response.blanksError}</Text>}
 //         {blanks.map((blank, index) => (
 //           <Group key={blank.id} align="flex-start">
 //             <Text>Blank {index + 1}:</Text>
@@ -170,7 +170,7 @@
 //               }
 //               placeholder="Correct answer"
 //             />
-//             <Button variant="subtle" color="red" onClick={() => handleRemoveBlank(blank.id)}>
+//             <Button variant="subtle" color="#ff4136" onClick={() => handleRemoveBlank(blank.id)}>
 //               Delete
 //             </Button>
 //           </Group>
@@ -181,7 +181,7 @@
 //       <InputLabel mt="lg" required>
 //         Explanation (Shown after Answer Submit.)
 //       </InputLabel>
-//       {response.explanationError && <Text color="red">{response.explanationError}</Text>}
+//       {response.explanationError && <Text color="#ff4136">{response.explanationError}</Text>}
 //       <RichTextEditorComponent content={explanation} setContent={setExplanation} index={1} />
 
 //       {/* Submit Button */}
@@ -202,7 +202,7 @@
 //           onChange={(e) => setNewBlankAnswer(e.target.value)}
 //         />
 //         {response.blankModalError && (
-//           <Text color="red" mt="sm">
+//           <Text color="#ff4136" mt="sm">
 //             {response.blankModalError}
 //           </Text>
 //         )}
@@ -258,12 +258,12 @@
 //       </Group>
 
 //       <InputLabel required>Question</InputLabel>
-//       {response.questionError && <Text c="red">{response.questionError}</Text>}
+//       {response.questionError && <Text c="#ff4136">{response.questionError}</Text>}
 //       <RichTextEditorComponent content={question} setContent={setQuestion} index={0} />
 
 //       <Stack mt="md">
 //         <InputLabel required>Correct Answer</InputLabel>
-//         {response.answerError && <Text c="red">{response.answerError}</Text>}
+//         {response.answerError && <Text c="#ff4136">{response.answerError}</Text>}
 //         <NumberInput
 //           value={correctAnswer}
 //           onChange={(e) => setCorrectAnswer(e !== null ? Number(e) : '')}
@@ -274,7 +274,7 @@
 //       <InputLabel mt="lg" required>
 //         Explanation (Shown after Answer Submit)
 //       </InputLabel>
-//       {response.explanationError && <Text c="red">{response.explanationError}</Text>}
+//       {response.explanationError && <Text c="#ff4136">{response.explanationError}</Text>}
 //       <RichTextEditorComponent content={explanation} setContent={setExplanation} index={1} />
 
 //       <Space h="lg" />
@@ -350,13 +350,13 @@ export const FillBlanks = ({ dataTunnel, response, setResponse }: any) => {
 
       {/* Question Editor */}
       <InputLabel required>Question {unit && `(Unit: ${unit})`}</InputLabel>
-      {response.titleError && <Text c="red">{response.titleError}</Text>}
+      {response.titleError && <Text c="#ff4136">{response.titleError}</Text>}
       <RichTextEditorComponent content={question} setContent={setQuestion} index={0} />
 
       {/* Correct Answer Input */}
       <Stack mt="md">
         <InputLabel required>Correct Answer</InputLabel>
-        {response.answerError && <Text c="red">{response.answerError}</Text>}
+        {response.answerError && <Text c="#ff4136">{response.answerError}</Text>}
         <Group align="flex-end">
           <NumberInput
             value={correctAnswer}
@@ -374,14 +374,14 @@ export const FillBlanks = ({ dataTunnel, response, setResponse }: any) => {
             required
           />
         </Group>
-        {response.unitError && <Text c="red">{response.unitError}</Text>}
+        {response.unitError && <Text c="#ff4136">{response.unitError}</Text>}
       </Stack>
 
       {/* Explanation Editor */}
       <InputLabel mt="lg" required>
         Explanation (Shown after Answer Submit)
       </InputLabel>
-      {response.explanationError && <Text c="red">{response.explanationError}</Text>}
+      {response.explanationError && <Text c="#ff4136">{response.explanationError}</Text>}
       <RichTextEditorComponent content={explanation} setContent={setExplanation} index={1} />
 
       <Space h="lg" />

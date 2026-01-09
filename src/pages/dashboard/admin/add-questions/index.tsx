@@ -92,7 +92,7 @@ const addQuestions = () => {
             </Group>
             <Group>
               <Stack>
-                {subjectsError && <Text c="red">Error fetching subjects</Text>}
+                {subjectsError && <Text c="#ff4136">Error fetching subjects</Text>}
                 <Select
                   label={<Text fw="600">Choose a Subject</Text>}
                   placeholder={'Select Subject'}
@@ -109,7 +109,7 @@ const addQuestions = () => {
                 />
               </Stack>
               <Stack>
-                {systemsDataError && <Text c="red">Error fetching systems</Text>}
+                {systemsDataError && <Text c="#ff4136">Error fetching systems</Text>}
 
                 <Select
                   disabled={!selectedSubject}

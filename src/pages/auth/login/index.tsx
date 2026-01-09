@@ -22,7 +22,7 @@ export default function LoginPage() {
             <Text mt="sxl" fz="xl" fw="inherit" component="span" pos="relative">
               Please login to continue..
             <UnderlineShape
-                c="#7e22ce"
+                c="#ff4136"
                 left="0"
                 pos="absolute"
                 h="0.625rem"

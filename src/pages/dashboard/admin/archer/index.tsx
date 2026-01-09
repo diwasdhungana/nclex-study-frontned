@@ -15,14 +15,14 @@ const index = () => {
         <Stack justify="center" align="center">
           <Title className={classes.title}> Timed Test Page </Title>
           <Text>Manage Timed Test Questions and Sets.</Text>
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
           <Group>
             <Button
               size="xl"
               onClick={() => {
                 navigate(paths.dashboard.admin.root);
               }}
-              bg="red"
+              bg="#ff4136"
             >
               <GoArrowLeft strokeWidth={3} size={20} />
               &nbsp; Home

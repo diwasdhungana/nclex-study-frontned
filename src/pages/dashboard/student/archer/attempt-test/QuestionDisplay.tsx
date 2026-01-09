@@ -30,7 +30,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
       notifications.show({
         title: 'Test Ended',
         message: 'Test has ended',
-        color: 'red',
+        color: '#ff4136',
       });
       setTimeout(() => {
         navigate(paths.dashboard.student.timed.root);
@@ -54,7 +54,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
         notifications.show({
           title: 'Test Ended',
           message: 'Test has ended',
-          color: 'red',
+          color: '#ff4136',
         });
         setTimeout(() => {
           navigate(paths.dashboard.student.timed.root);
@@ -99,7 +99,7 @@ const QuestionDisplay = ({ props }: { props: any }) => {
         )}
         <Group my="0px" py="0px">
           <Group>
-            Time Remaining : <Text c="red">{formatTime(timeRemaining)}</Text>
+            Time Remaining : <Text c="#ff4136">{formatTime(timeRemaining)}</Text>
           </Group>
 
           <Group>Total Questions: {total}</Group>

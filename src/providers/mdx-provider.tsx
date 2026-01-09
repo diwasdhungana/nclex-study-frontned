@@ -6,7 +6,7 @@ type MDXDefaultProviderProps = ComponentProps<typeof MDXDefaultProvider>;
 type MDXProviderProps = Omit<MDXDefaultProviderProps, 'components'>;
 
 const components: MDXDefaultProviderProps['components'] = {
-  em: (props) => <em style={{ color: 'red' }} {...props} />,
+  em: (props) => <em style={{ color: '#ff4136' }} {...props} />,
 };
 
 export function MDXProvider(props: MDXProviderProps) {

@@ -69,7 +69,7 @@ const ViewQuestions = () => {
                     <Table.Td>{set.questions.length}</Table.Td>
                     <Table.Td>{set.fullMarks}</Table.Td>
                     <Table.Td>
-                      <Badge color={set.enabled ? 'green' : 'red'}>
+                      <Badge color={set.enabled ? 'green' : '#ff4136'}>
                         {set.enabled ? 'Active' : 'Inactive'}
                       </Badge>
                     </Table.Td>
@@ -82,7 +82,7 @@ const ViewQuestions = () => {
                           {set.enabled ? (
                             <PiToggleRightDuotone size={30} color="green" />
                           ) : (
-                            <PiToggleLeftDuotone size={30} color="red" />
+                            <PiToggleLeftDuotone size={30} color="#ff4136" />
                           )}
                         </Button>
                         <Button

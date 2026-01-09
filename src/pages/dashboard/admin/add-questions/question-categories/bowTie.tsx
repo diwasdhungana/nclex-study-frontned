@@ -246,7 +246,7 @@ export const BowTie = ({ dataTunnel, response, setResponse }: any) => {
 
       <Stack mt="md">
         <InputLabel>Title</InputLabel>
-        {response.titleError && <Text c="red">{response.titleError}</Text>}
+        {response.titleError && <Text c="#ff4136">{response.titleError}</Text>}
         <RichTextEditorComponent content={title} setContent={setTitle} index={0} />
       </Stack>
       <Group justify="center" mt="xl">
@@ -511,7 +511,7 @@ export const BowTie = ({ dataTunnel, response, setResponse }: any) => {
           </Group>
           <Group justify="center">
             <Button
-              bg="red"
+              bg="#ff4136"
               w="200px"
               onClick={() => {
                 const newleftItems = leftItems.map((item) => ({ ...item, lifted: false }));
@@ -547,13 +547,13 @@ export const BowTie = ({ dataTunnel, response, setResponse }: any) => {
               Reset All
             </Button>
           </Group>
-          {response.optionsError && <Text c="red">{response.optionsError}</Text>}
+          {response.optionsError && <Text c="#ff4136">{response.optionsError}</Text>}
         </Stack>
       </Group>
 
       <Stack mt="xl">
         <InputLabel>Explanation</InputLabel>
-        {response.explanationError && <Text c="red">{response.explanationError}</Text>}
+        {response.explanationError && <Text c="#ff4136">{response.explanationError}</Text>}
         <RichTextEditorComponent content={explanation} setContent={setExplanation} index={0} />
       </Stack>
 

@@ -291,7 +291,7 @@ export const BowTiewithModes = ({ data, mode }: { data: any; mode: any }) => {
           false
         )} */}
         {/* {item.lifted ? (
-          <Text size="sm" c="red">
+          <Text size="sm" c="#ff4136">
             ✗
           </Text>
         ) : (

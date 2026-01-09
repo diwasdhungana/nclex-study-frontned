@@ -119,7 +119,7 @@ const ProfileUpdate = () => {
               <Title order={2}>My Profile</Title>
 
               {updateError && (
-                <Alert color="red" title="Update Failed">
+                <Alert color="#ff4136" title="Update Failed">
                   {updateError}
                 </Alert>
               )}

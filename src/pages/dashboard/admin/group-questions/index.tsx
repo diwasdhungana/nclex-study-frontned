@@ -98,7 +98,7 @@ const index = () => {
                   </div>
                 ) : (
                   <div>
-                    <Text c="red">N/A</Text>
+                    <Text c="#ff4136">N/A</Text>
                   </div>
                 )
               }

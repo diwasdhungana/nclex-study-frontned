@@ -38,7 +38,7 @@ const index = () => {
         <Stack justify="center" align="center">
           <Title className={classes.title}> Student Page </Title>
           <Text>Explore our Practice Test and Timed Test.</Text>
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
           <Group>
             <Button
               size="xl"
@@ -68,7 +68,7 @@ const index = () => {
             )}
             {user.archerEligible && (
               <Button
-                bg="red"
+                bg="#ff4136"
                 size="xl"
                 onClick={() => {
                   navigate(paths.dashboard.student.timed.root);

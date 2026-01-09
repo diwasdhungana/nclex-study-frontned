@@ -53,9 +53,9 @@ export const HighlightwithModes = ({ data, mode }: { data: any; mode: any }) => 
         (element as HTMLElement).style.backgroundColor = 'gold';
         (element as HTMLElement).style.color = 'black';
       }
-      // If selected but not correct — red
+      // If selected but not correct — #ff4136
       else if (isSelected) {
-        (element as HTMLElement).style.backgroundColor = 'red';
+        (element as HTMLElement).style.backgroundColor = '#ff4136';
         (element as HTMLElement).style.color = 'black';
       }
       // If correct but not selected — green
@@ -95,8 +95,8 @@ export const HighlightwithModes = ({ data, mode }: { data: any; mode: any }) => 
             <Text size="sm">Correct Answer (Green)</Text>
           </Group>
           <Group gap="xs">
-            <div style={{ width: 16, height: 16, backgroundColor: 'red', borderRadius: 4 }} />
-            <Text size="sm">Selected but Incorrect (Red)</Text>
+            <div style={{ width: 16, height: 16, backgroundColor: '#ff4136', borderRadius: 4 }} />
+            <Text size="sm">Selected but Incorrect (#ff4136)</Text>
           </Group>
         </Group>
       </Stack>
@@ -109,8 +109,8 @@ export const HighlightwithModes = ({ data, mode }: { data: any; mode: any }) => 
               : incommingData?.status === 'partially correct'
                 ? 'green.2'
                 : incommingData?.status === 'incorrect'
-                  ? 'red.3'
-                  : 'red.3'
+                  ? '#ff6259'
+                  : '#ff6259'
           }
         >
           <Stack justify="center">

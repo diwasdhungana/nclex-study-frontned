@@ -165,7 +165,7 @@ export const ExtDropDown: React.FC<ExtDropDownProps> = ({
         />
       </Group>
       <InputLabel>Main Question (Title)</InputLabel>
-      {response.titleError && <Text c="red">{response.titleError}</Text>}
+      {response.titleError && <Text c="#ff4136">{response.titleError}</Text>}
       <RichTextEditorComponent
         content={title}
         setContent={(item: string) => setTitle(item)}
@@ -215,7 +215,7 @@ export const ExtDropDown: React.FC<ExtDropDownProps> = ({
             </Group>
           ))}
         </Stack>
-        {response.optionsError && <Text c="red">{response.optionsError}</Text>}
+        {response.optionsError && <Text c="#ff4136">{response.optionsError}</Text>}
         <Group justify="space-between" mt="md">
           <Group>
             <Button
@@ -269,7 +269,7 @@ export const ExtDropDown: React.FC<ExtDropDownProps> = ({
           </Group>
           {options.length > 0 && (
             <Button
-              bg="red"
+              bg="#ff4136"
               onClick={() => {
                 if (options.findLast((opt) => opt.type === 'dropdown') && options.length > 1) {
                   setCorrectAnswer((prevCorrectAnswers) =>
@@ -289,7 +289,7 @@ export const ExtDropDown: React.FC<ExtDropDownProps> = ({
       </Stack>
 
       <InputLabel mt="lg">Explanation (Shown after Answer Submit.)</InputLabel>
-      {response.explanationError && <Text c="red">{response.explanationError}</Text>}
+      {response.explanationError && <Text c="#ff4136">{response.explanationError}</Text>}
       <RichTextEditorComponent
         index={0}
         content={explanation}

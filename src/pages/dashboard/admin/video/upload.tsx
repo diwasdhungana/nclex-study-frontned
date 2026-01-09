@@ -44,7 +44,7 @@ export default function VideoUploadPage() {
   if (isError) {
     notifications.show({
       message: 'Failed to fetch video details',
-      color: 'red',
+      color: '#ff4136',
     });
     return null; // or handle error state appropriately
   }
@@ -94,7 +94,7 @@ export default function VideoUploadPage() {
 
               notifications.show({
                 message: 'Failed to get upload URL',
-                color: 'red',
+                color: '#ff4136',
               });
               return;
             }
@@ -161,7 +161,7 @@ export default function VideoUploadPage() {
       console.error('Error uploading to S3:', error);
       notifications.show({
         message: 'Failed to upload video to storage',
-        color: 'red',
+        color: '#ff4136',
       });
     }
   };
@@ -173,7 +173,7 @@ export default function VideoUploadPage() {
       centered: true,
       children: <Text size="sm">Are you sure you want to delete this particular video?</Text>,
       labels: { confirm: 'Delete Video', cancel: "No don't delete it" },
-      confirmProps: { color: 'red' },
+      confirmProps: { color: '#ff4136' },
       onConfirm: () => deleteMutation.mutate({ route: { id: videoDetails._id } }),
       onWaiting: () => modals.openContextModal('Deleting Video...' as any),
     });

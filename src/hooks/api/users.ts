@@ -20,7 +20,7 @@ export const useCreateStudents = createPostMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -34,7 +34,7 @@ export const useCreateAdmins = createPostMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -49,7 +49,7 @@ export const useEditMyProfile = createPutMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -63,7 +63,7 @@ export const useEditSpecificProfile = createPutMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -77,7 +77,7 @@ export const useDeleteUser = createPatchMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -90,7 +90,7 @@ export const useUnDeleteUser = createPatchMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -111,7 +111,7 @@ export const usePostLogoutUser = createPostMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });

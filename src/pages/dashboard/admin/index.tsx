@@ -21,7 +21,7 @@ const index = () => {
         <Stack justify="center" align="center">
           <Title className={classes.title}> Admin Page </Title>
           <Text>Manage Regular Tests, Timed Tests and Class Recordings.</Text>
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
           <Group>
             <Button
               size="xl"
@@ -61,7 +61,7 @@ const index = () => {
               onClick={() => {
                 navigate(paths.dashboard.admin.timed.root);
               }}
-              bg="red"
+              bg="#ff4136"
             >
               Timed Test
             </Button>

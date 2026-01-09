@@ -61,7 +61,7 @@ export const usePostSet = createPostMutationHook({
       queryClient.invalidateQueries(['getAllSets'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -73,7 +73,7 @@ export const usePutSetQuestions = createPutMutationHook({
       queryClient.invalidateQueries(['getSets'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -97,7 +97,7 @@ export const useDeleteGroup = createDeleteMutationHook({
       notifications.show({ message: 'Group deleted successfully', color: 'green' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -110,7 +110,7 @@ export const usePostGroup = createPostMutationHook({
       notifications.show({ message: 'Group created successfully', color: 'green' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -123,7 +123,7 @@ export const useDeleteManyQuestions = createDeleteMutationHook({
       notifications.show({ message: 'Question deleted successfully', color: 'green' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -135,7 +135,7 @@ export const useDeleteManyArcherQuestions = createDeleteMutationHook({
       notifications.show({ message: 'Question deleted successfully', color: 'green' });
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -148,7 +148,7 @@ export const usePatchArcherSet = createPatchMutationHook({
       notifications.show({ message: 'Set updated successfully', color: 'green' });
     },
     onError: (error: any) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -160,7 +160,7 @@ export const usePatchQuestionOrderInSet = createPatchMutationHookWithBody({
       notifications.show({ message: 'Set updated successfully', color: 'green' });
     },
     onError: (error: any) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -172,7 +172,7 @@ export const usePostQuestion = createPostMutationHook({
       queryClient.invalidateQueries(['getQuestions'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -184,7 +184,7 @@ export const usePostArcherQuestion = createPostMutationHook({
       queryClient.invalidateQueries(['getQuestions'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });

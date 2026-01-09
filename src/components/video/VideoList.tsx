@@ -88,7 +88,7 @@ export const VideoList = ({
                       </ActionIcon>
                     )}
                     {isAdmin && onDelete && (
-                      <ActionIcon variant="subtle" color="red" onClick={() => onDelete(video)}>
+                      <ActionIcon variant="subtle" color="#ff4136" onClick={() => onDelete(video)}>
                         <IconTrash size={16} />
                       </ActionIcon>
                     )}

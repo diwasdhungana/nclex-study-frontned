@@ -85,7 +85,7 @@ export const VideoControls = ({
         styles={{
           thumb: { display: 'none' },
           track: { height: 4 },
-          bar: { backgroundColor: 'red' },
+          bar: { backgroundColor: '#ff4136' },
         }}
         mb="sm"
       />

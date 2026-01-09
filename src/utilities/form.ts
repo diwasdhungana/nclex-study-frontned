@@ -8,7 +8,7 @@ export function handleFormErrors(form: UseFormReturnType<any>, errors: unknown) 
 
   if ('formErrors' in errors && Array.isArray(errors.formErrors)) {
     errors.formErrors.forEach((error) => {
-      notifications.show({ message: error, color: 'red' });
+      notifications.show({ message: error, color: '#ff4136' });
     });
   }
 

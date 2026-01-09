@@ -132,8 +132,8 @@ export const McqwithModes = ({ data, mode }: { data: any; mode: any }) => {
               : incommingData?.status === 'partially correct'
                 ? 'green.2'
                 : incommingData?.status === 'incorrect'
-                  ? 'red.3'
-                  : 'red.3'
+                  ? '#ff6259'
+                  : '#ff6259'
           }
         >
           <Stack justify="center">

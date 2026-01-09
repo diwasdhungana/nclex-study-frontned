@@ -130,7 +130,7 @@ export const ExtDropDownwithModes = ({ data, mode }: { data: any; mode: any }) =
                       )?.value ==
                       answers.find((o: { id: string; value: string }) => o.id === option.id)?.value
                         ? { border: '2px solid green', borderRadius: '10px' }
-                        : { border: '2px solid red', borderRadius: '10px' }
+                        : { border: '2px solid #ff4136', borderRadius: '10px' }
                     }
                   />
                   {/* {attempted &&
@@ -159,8 +159,8 @@ export const ExtDropDownwithModes = ({ data, mode }: { data: any; mode: any }) =
               : incommingData?.status === 'partially correct'
                 ? 'green.2'
                 : incommingData?.status === 'incorrect'
-                  ? 'red.3'
-                  : 'red.3'
+                  ? '#ff6259'
+                  : '#ff6259'
           }
         >
           <Stack justify="center">

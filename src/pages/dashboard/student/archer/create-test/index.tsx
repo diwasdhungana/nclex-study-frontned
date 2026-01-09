@@ -68,7 +68,7 @@ const Index = () => {
         <Stack ml="md">
           <Title order={2}>New Archer Test</Title>
           <Text size="lg"> Select a Set to continue</Text>
-          <Divider my="md" bg="red" w="100%" />
+          <Divider my="md" bg="#ff4136" w="100%" />
           {archerSetsLoading ? (
             <Text>Loading...</Text>
           ) : archerSetsError ? (

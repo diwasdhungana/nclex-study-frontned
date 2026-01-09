@@ -155,7 +155,7 @@ export const ExtDropDownwithModes = ({ data, mode }: { data: any; mode: any }) =
                           answers.find((o: { id: string; value: string }) => o.id === option.id)
                             ?.value
                           ? { border: '2px solid green', borderRadius: '10px' }
-                          : { border: '2px solid red', borderRadius: '10px' }
+                          : { border: '2px solid #ff4136', borderRadius: '10px' }
                         : {}
                     }
                   />

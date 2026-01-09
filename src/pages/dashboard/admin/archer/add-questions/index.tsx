@@ -97,7 +97,7 @@ const addQuestions = () => {
             </Group>
             <Group>
               <Stack>
-                {setsError && <Text c="red">Error fetching subjects</Text>}
+                {setsError && <Text c="#ff4136">Error fetching subjects</Text>}
 
                 <Select
                   label={<Text fw="600">Choose a Subject</Text>}

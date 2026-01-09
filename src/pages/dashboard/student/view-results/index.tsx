@@ -109,7 +109,7 @@ const index = () => {
       color = 'yellow';
     } else {
       performance = 'Needs Improvement';
-      color = 'red';
+      color = '#ff4136';
     }
 
     return {
@@ -134,7 +134,7 @@ const index = () => {
         <Paper shadow="xs" p="lg" radius="lg">
           <Stack ml="md">
             <Title order={2}>Test Results</Title>
-            <Divider my="md" bg="red" w="100%" />
+            <Divider my="md" bg="#ff4136" w="100%" />
 
             {testsWithPerformance?.length === 0 ? (
               <Text>No completed tests found.</Text>

@@ -195,7 +195,7 @@ export const DragNDrop = ({ dataTunnel, response, setResponse }: any) => {
       />
 
       <InputLabel>Main Question (Title)</InputLabel>
-      {response.titleError && <Text c="red">{response.titleError}</Text>}
+      {response.titleError && <Text c="#ff4136">{response.titleError}</Text>}
       <RichTextEditorComponent content={title} setContent={setTitle} index={0} />
 
       <Stack mt="md">
@@ -209,12 +209,12 @@ export const DragNDrop = ({ dataTunnel, response, setResponse }: any) => {
                   resetAll();
                   setProcessedText('');
                 }}
-                bg="red"
+                bg="#ff4136"
                 w="100px"
               >
                 Edit Text
               </Button>
-              {response.optionsError && <Text c="red">{response.optionsError}</Text>}
+              {response.optionsError && <Text c="#ff4136">{response.optionsError}</Text>}
               <Stack w="350px" mt="lg" style={{ border: '1px solid #000', borderRadius: '10px' }}>
                 <Group
                   justify="center"
@@ -309,7 +309,7 @@ export const DragNDrop = ({ dataTunnel, response, setResponse }: any) => {
       </Stack>
 
       <InputLabel mt="lg">Explanation (Shown after submission)</InputLabel>
-      {response.explanationError && <Text c="red">{response.explanationError}</Text>}
+      {response.explanationError && <Text c="#ff4136">{response.explanationError}</Text>}
 
       <RichTextEditorComponent content={explanation} setContent={setExplanation} index={0} />
 

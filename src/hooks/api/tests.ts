@@ -18,7 +18,7 @@ export const useCreateTest = createPostMutationHook({
       queryClient.invalidateQueries(['mytests'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -31,7 +31,7 @@ export const useCreateArcherTest = createPostMutationHook({
       queryClient.invalidateQueries(['myarchertests'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -70,7 +70,7 @@ export const usePostSuspendTest = createPostMutationHook({
       queryClient.invalidateQueries(['mytests'] as InvalidateQueryFilters);
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -88,7 +88,7 @@ export const usePostAnswer = createPostMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });
@@ -106,7 +106,7 @@ export const usePostArcherAnswer = createPostMutationHook({
       return data;
     },
     onError: (error) => {
-      notifications.show({ message: error.messages[0], color: 'red' });
+      notifications.show({ message: error.messages[0], color: '#ff4136' });
     },
   },
 });

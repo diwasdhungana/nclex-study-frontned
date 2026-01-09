@@ -49,7 +49,7 @@ export function LoginForm({ onSuccess, ...props }: LoginFormProps) {
       <Stack {...props}>
         <TextInput name="phoneNumber" label="User Id" required />
         <PasswordInput name="password" label="Password" required />
-        <Text c="red" fw="600" size="sm" mt="-5px" mb="-10px">
+        <Text c="#ff4136" fw="600" size="sm" mt="-5px" mb="-10px">
           {form.errors.global && form.errors.global}
         </Text>
         <Button type="submit" loading={isPending}>

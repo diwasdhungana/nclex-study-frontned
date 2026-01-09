@@ -16,7 +16,7 @@ export function MetricCardTextTrend({ value, children, ...props }: MetricCardTex
     icon: Icon,
   } = match(
     [value > 0, { sign: '+', color: 'var(--mantine-color-teal-6)', icon: PiTrendUp }],
-    [value > 0, { sign: '', color: 'var(--mantine-color-red-6)', icon: PiTrendDown }]
+    [value > 0, { sign: '', color: 'var(--mantine-color-#ff4136-6)', icon: PiTrendDown }]
   );
 
   return (

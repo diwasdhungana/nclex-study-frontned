@@ -49,7 +49,7 @@ export const SubmitQuestion = ({
         Submit
       </Button>
       {response.status != 'success' && attempted && (
-        <Text c="red">Check fields above for error.</Text>
+        <Text c="#ff4136">Check fields above for error.</Text>
       )}
     </Group>
   );

@@ -137,9 +137,9 @@ export function RichTextEditorComponent({
           onError: (error) => {
             console.log('error', error);
             if (error.messages[0]) {
-              notifications.show({ message: error.messages[0], color: 'red' });
+              notifications.show({ message: error.messages[0], color: '#ff4136' });
             } else {
-              notifications.show({ message: 'Uploads will be available soon.', color: 'red' });
+              notifications.show({ message: 'Uploads will be available soon.', color: '#ff4136' });
             }
           },
         }

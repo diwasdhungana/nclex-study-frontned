@@ -106,7 +106,7 @@ const ViewQuestions = () => {
       centered: true,
       children: <Text size="sm">Are you sure you want to delete the selected question?</Text>,
       labels: { confirm: 'Delete Question', cancel: "No don't delete it" },
-      confirmProps: { color: 'red' },
+      confirmProps: { color: '#ff4136' },
       onConfirm: () =>
         deleteQuestionMutate({
           route: {
@@ -185,7 +185,7 @@ const ViewQuestions = () => {
                 <LoadingScreen></LoadingScreen>
               </Text>
             )}
-            {questionsError && <Text color="red">Error loading questions</Text>}
+            {questionsError && <Text color="#ff4136">Error loading questions</Text>}
 
             {Questions?.data?.docs?.map((question: any, index: any) => (
               <Paper key={index} px="xl" radius="sm" shadow="none" withBorder>
@@ -237,7 +237,7 @@ const ViewQuestions = () => {
                         </Badge>
                       </Group>
                       <Group>
-                        <Badge color="red" variant="light">
+                        <Badge color="#ff4136" variant="light">
                           {question?.subject?.name || 'subject'}
                         </Badge>
                         <Badge color="orange" variant="light">
@@ -256,7 +256,7 @@ const ViewQuestions = () => {
                     radius="10"
                     onClick={() => deleteQuestion(question._id)}
                   >
-                    <PiTrashBold size="30px" color="red" style={{ margin: '5px' }} />
+                    <PiTrashBold size="30px" color="#ff4136" style={{ margin: '5px' }} />
                   </Button>
                 </Group>
               </Paper>
