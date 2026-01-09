@@ -1,5 +1,5 @@
 export const app = {
-  name: 'Nclex Study',
+  name: 'Nclex RN Study',
 
   // apiBaseUrl: 'https://dev-demo.all-attend.com/gracern-prod-api', //for production
   // apiBaseUrl: 'https://dev-demo.all-attend.com/gracern-api', //for development

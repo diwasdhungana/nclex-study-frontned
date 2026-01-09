@@ -20,7 +20,7 @@ export function AuthLayout() {
           <Box maw="40rem">
             <Title order={2}>Get Prepared for your Nursing Journey.</Title>
             <Text my="lg" c="dimmed">
-              With our platform, you can get access to the best resources and tools to help you
+              With our platform, you can get access to the best resources and tools to help you test yourself and 
               prepare for your nursing journey.
             </Text>
   

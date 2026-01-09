@@ -30,8 +30,8 @@ export default function HomePage() {
     <Page title="Home" className={classes.root}>
       <Group justify="center" h="80%">
         <Stack justify="center" align="center">
-          <Title className={classes.title}>Welcome to Nclex Study's </Title>
-          <Title className={classes.title}> NCLEX practice app </Title>
+          <Title className={classes.title}>Welcome to Nclex RN Study's </Title>
+          <Title className={classes.title}> Registered Nurse test practice app </Title>
           <Text>Please proceed to login by refreshing this page.</Text>
           <Divider my="md" bg="#ff4136" w="100%" />
           <Button size="xl" onClick={

@@ -14,7 +14,7 @@ export default function LoginPage() {
           <Title order={2}>
             Welcome to{' '}
             <Text fz="inherit" fw="inherit" component="span" pos="relative" c="#7e22ce">
-              Nclex Study
+              Nclex RN Study
               
             </Text>{' '}
             <br />
