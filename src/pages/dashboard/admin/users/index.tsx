@@ -282,7 +282,7 @@ const UserManagement = () => {
             <Table.Th>User Id</Table.Th>
             <Table.Th>Email</Table.Th>
             <Table.Th>Logout</Table.Th>
-            {type != 'admin' && <Table.Th>Archer Eligible</Table.Th>}
+            {type != 'admin' && <Table.Th>Timed Test Eligible</Table.Th>}
             {/* {type != 'admin' && <Table.Th>Video Eligible</Table.Th>} */}
             {type != 'admin' && <Table.Th>User Enabled</Table.Th>}
             <Table.Th>Actions</Table.Th>
